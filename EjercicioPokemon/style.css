@@ -1,0 +1,194 @@
+/* Importación de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+:root {
+    --clr-gray: #ccc;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav img {
+    height: 50px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 5px;
+}
+
+.btn-header {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Color para el botón 'Ver todos' */
+#ver-todos {
+    background-color: #666;
+}
+
+/* Colores según el tipo de Pokémon */
+.normal { background-color: #A8A77A; }
+.fire { background-color: #EE8130; }
+.water { background-color: #6390F0; }
+.grass { background-color: #7AC74C; }
+.electric { background-color: #F7D02C; }
+.ice { background-color: #96D9D6; }
+.fighting { background-color: #C22E28; }
+.poison { background-color: #A33EA1; }
+.ground { background-color: #E2BF65; }
+.flying { background-color: #A98FF3; }
+.psychic { background-color: #F95587; }
+.bug { background-color: #A6B91A; }
+.rock { background-color: #B6A136; }
+.ghost { background-color: #735797; }
+.dark { background-color: #705746; }
+.dragon { background-color: #6F35FC; }
+.steel { background-color: #B7B7CE; }
+.fairy { background-color: #D685AD; }
+
+/* Efecto hover */
+.btn-header:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para el main y las tarjetas de Pokémon */
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.pokemon-todos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pokemon {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.pokemon-id-back {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform:translateX(-50%);
+    font-size: 6rem;
+    font-weight: 800;
+    z-index: -1;
+    color: var(--clr-gray);
+}
+
+.pokemon-imagen img {
+    width: 100px;
+    height: 100px;
+}
+
+.pokemon-info {
+    margin-top: 10px;
+}
+
+.nombre-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.pokemon-id {
+    font-size: 14px;
+    color: #666;
+}
+
+.pokemon-nombre {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.pokemon-tipos {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.tipo {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Hacer que el color de los tipos coincida con los botones del header */
+.tipo.normal { background-color: #A8A77A; }
+.tipo.fire { background-color: #EE8130; }
+.tipo.water { background-color: #6390F0; }
+.tipo.grass { background-color: #7AC74C; }
+.tipo.electric { background-color: #F7D02C; }
+.tipo.ice { background-color: #96D9D6; }
+.tipo.fighting { background-color: #C22E28; }
+.tipo.poison { background-color: #A33EA1; }
+.tipo.ground { background-color: #E2BF65; }
+.tipo.flying { background-color: #A98FF3; }
+.tipo.psychic { background-color: #F95587; }
+.tipo.bug { background-color: #A6B91A; }
+.tipo.rock { background-color: #B6A136; }
+.tipo.ghost { background-color: #735797; }
+.tipo.dark { background-color: #705746; }
+.tipo.dragon { background-color: #6F35FC; }
+.tipo.steel { background-color: #B7B7CE; }
+.tipo.fairy { background-color: #D685AD; }
+
+.pokemon-stats {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
